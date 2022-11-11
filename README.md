@@ -173,3 +173,4 @@ The following properties are used. All the stores have the same password, set at
 * Truststore Password: the `certificate_store_password` parameter you set in the `params.env` file for deployment.
 * Truststore Type: `JKS`
 * TLS Protocol: `TLS`
+
