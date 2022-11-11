@@ -41,7 +41,7 @@ USER root
 # Setup NiFi-Registry user
 RUN rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm \
     && microdnf update \
-    && microdnf install -y curl jq xmlstarlet hostname gzip nano \
+    && microdnf install -y git curl jq xmlstarlet hostname gzip nano \
     && useradd --shell /bin/bash -u ${UID} -g ${GID} -m nifi \
     && mkdir -p ${NIFI_REGISTRY_BASE_DIR} \
     && chown -R ${UID}:${GID} ${NIFI_REGISTRY_BASE_DIR}
